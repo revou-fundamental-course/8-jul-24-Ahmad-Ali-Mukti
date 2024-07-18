@@ -1,1 +1,62 @@
-/*ini css*/
+/*ini css*/  
+.main-title {
+    text-align: center;
+    background: sandybrown;
+    height: fit-content;
+}
+
+main{display: flex;
+justify-content: space-around;
+padding: 20px;
+}
+
+.main-content{
+    flex: 1;
+    padding: 12px;
+}
+
+.jenis-kelamin{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.submit{ 
+    border-radius: 3px;
+    background: sandybrown;
+    border: 0px;
+    padding: 7px;}
+    
+
+.reset{    
+    border-radius: 1px;
+    background: lightgray;
+    border: 0px;
+    padding: 5px;
+}
+
+form{   
+    border-radius: 10px;
+    background: floralwhite;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=number]:focus {
+    border: 3px solid #555;
+  }
+
+  .hasil{
+    border-radius: 8px;
+    text-align: center;
+    background: floralwhite;
+    padding: 8px;
+  }
