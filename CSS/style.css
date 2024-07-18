@@ -54,9 +54,23 @@ input[type=number] {
     border: 3px solid #555;
   }
 
+  .header-result{
+    margin: initial;
+  }
+
   .hasil{
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
     background: floralwhite;
     padding: 8px;
+  }
+
+  @media only screen and (max-width : 480px){
+    main {
+        flex-direction: column;
+    }
+  }
+
+  .informasi-tambahan {
+    font-size: small; 
   }

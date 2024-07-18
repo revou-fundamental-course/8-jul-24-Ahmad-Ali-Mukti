@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="CSS/style.css">
-
+    <script src="Javascript/index.js"> </script>
 </head>
 <body>
 
@@ -19,19 +19,13 @@
         <!-- left content -->
     <section class="main-content">
              <!--Main article-->
-        <article>
-            <!-- <p>Kalkulator BMI adalah metode hitung-hitungan yang dapat memberikan informasi dasar terhadap masalah berat badan Anda secara keseluruhan. Angka yang dihasilkan dari kalkulator ini dapat berperan sebagai tanda peringatan bahaya dan melindungi seseorang dari kematian akibat penyakit kronis terkait obesitas. -->
-             <!-- </p> -->
-              <p> lorem ipsum si amet</p>
-         </article>
               <!--form-->
         <section>
             <form>
                 <div>
                 <div class="jenis-kelamin"> Jenis kelamin</div>
-                <input type="radio" id="secelection-man"> <label for="secelection-man""> Laki laki</label>
-                <input type="radio" id="secelection-women"> <label for="secelection-women""> Perempuan</label>
-            </div>
+                <input type="radio" id="secelection-man" name="gender"> <label for="secelection-man"> Laki laki</label>
+                <input type="radio" id="secelection-women" name="gender"> <label for="secelection-women"> Perempuan</label>            </div>
             <div>
                 <label for="input-berat-badan"> Berat Badan (Kg) </label> 
                 <input type="number" id="input-berat-badan">
@@ -45,44 +39,38 @@
                 <input type="number" id="input-Tinggi-Badan">                
             </div>
             <div>
-                <button class="submit"> Submit</button>
-                <button class="reset"> Reset</button> 
-            </div>
+                <button class="submit" type="button" onclick="calculateBMI();"> Submit</button>
+                <button class="reset" type="reset"> Reset</button> 
+              </div>
             </form>
         </section>
-
-        <!--form article-->
-        <article>
-            <header>
-                <p>
-                    lorem ipsum si amet
-                </p>
-                
-            </header>
-        </article>
     </section>
       
         <!-- right content -->
     <section class="main-content">
+
           <!--result article-->
           <article>
+            
             <!--header hasil-->
             <header>
-                <h3>hasil</h3>
+                <h4 class="header-result"> Result </h4>
             </header>
             </article>
             <!--result section-->
             <section class="hasil">
             <p> Hasil result adalah</p>
 
-            <h2> 0 </h2>
+            <h2 id="bmi-result"> 0 </h2>
 
-            <p> Anda Memiliki Berat Badan Berlebih</p>
+            <p id="category-result"></p>
             </section>
 
             <!--artikel hasil-->
             <article>
-
+                <p class="informasi-tambahan"> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan reaksi penyakit seseorang.
+                    Anda perlu berkonsultasi lebih lanjut mengenai resiko dan kehawatiran anda terkait berat badan anda
+                </p>
             </article>
         
     </section>
